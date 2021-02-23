@@ -57,7 +57,7 @@ find_package(catkin REQUIRED COMPONENTS
  add_service_files(DIRECTORY srv
    FILES
    AddTwoInts.srv
- )
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -130,6 +130,14 @@ add_dependencies(listener pkg1_generate_messages_cpp)
 add_executable(display src/display.cpp)
 target_link_libraries(display ${catkin_LIBRARIES})
 add_dependencies(display pkg1_generate_messages_cpp)
+
+add_executable(node_srv1 src/node_srv1.cpp)
+target_link_libraries(node_srv1 ${catkin_LIBRARIES})
+add_dependencies(node_srv1 pkg1_generate_messages_cpp)
+
+add_executable(node_client1 src/node_client1.cpp)
+target_link_libraries(node_client1 ${catkin_LIBRARIES})
+add_dependencies(node_client1 pkg1_generate_messages_cpp)
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/pkg1.cpp
