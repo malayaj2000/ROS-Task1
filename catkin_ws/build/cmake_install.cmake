@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/malayajrath/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/malayajrath/catkin_ws/build/pkg1/cmake_install.cmake")
+  include("/home/malayajrath/catkin_ws/build/tiburon_task_trainee/cmake_install.cmake")
 
 endif()
 

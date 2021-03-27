@@ -152,7 +152,8 @@ struct Definition< ::pkg1::AddTwoIntsRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int64 a\n"
+    return "\n"
+"int64 a\n"
 "int64 b\n"
 ;
   }

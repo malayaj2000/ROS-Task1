@@ -77,6 +77,7 @@ class AddTwoIntsRequest {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    
     int64 a
     int64 b
     

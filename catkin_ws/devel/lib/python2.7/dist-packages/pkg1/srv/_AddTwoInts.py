@@ -11,7 +11,8 @@ class AddTwoIntsRequest(genpy.Message):
   _md5sum = "36d09b846be0b371c5f190354dd3153e"
   _type = "pkg1/AddTwoIntsRequest"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """int64 a
+  _full_text = """
+int64 a
 int64 b
 """
   __slots__ = ['a','b']

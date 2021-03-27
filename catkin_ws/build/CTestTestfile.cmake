@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("pkg1")
+subdirs("tiburon_task_trainee")

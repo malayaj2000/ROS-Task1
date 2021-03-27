@@ -1,0 +1,8 @@
+prefix=/home/malayajrath/catkin_ws/install
+
+Name: tiburon_task_trainee
+Description: Description of tiburon_task_trainee
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

@@ -178,7 +178,8 @@
 (setf (get pkg1::AddTwoIntsRequest :md5sum-) "6a2e34150c00229791cc89ff309fff21")
 (setf (get pkg1::AddTwoIntsRequest :datatype-) "pkg1/AddTwoIntsRequest")
 (setf (get pkg1::AddTwoIntsRequest :definition-)
-      "int64 a
+      "
+int64 a
 int64 b
 ---
 int64 sum
@@ -188,7 +189,8 @@ int64 sum
 (setf (get pkg1::AddTwoIntsResponse :md5sum-) "6a2e34150c00229791cc89ff309fff21")
 (setf (get pkg1::AddTwoIntsResponse :datatype-) "pkg1/AddTwoIntsResponse")
 (setf (get pkg1::AddTwoIntsResponse :definition-)
-      "int64 a
+      "
+int64 a
 int64 b
 ---
 int64 sum

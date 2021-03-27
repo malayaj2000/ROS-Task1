@@ -1,2 +1,2 @@
-pkg1
+pkg1:tiburon_task_trainee
 -DCATKIN_DEVEL_PREFIX=/home/malayajrath/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/malayajrath/catkin_ws/install -G Unix Makefiles

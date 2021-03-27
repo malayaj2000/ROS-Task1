@@ -12,7 +12,12 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   message_generation
+  sensor_msgs
+  image_transport
+  cv_bridge
 )
+
+find_package(OpenCV 3.2 REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -138,6 +143,14 @@ add_dependencies(node_srv1 pkg1_generate_messages_cpp)
 add_executable(node_client1 src/node_client1.cpp)
 target_link_libraries(node_client1 ${catkin_LIBRARIES})
 add_dependencies(node_client1 pkg1_generate_messages_cpp)
+
+add_executable(ball_node1 src/ball_node1.cpp)
+target_link_libraries(ball_node1 ${catkin_LIBRARIES} ${OpenCV_LIBS})
+add_dependencies(ball_node1 pkg1_generate_messages_cpp)
+
+add_executable(ball_node2 src/ball_node2.cpp)
+target_link_libraries(ball_node2 ${catkin_LIBRARIES} ${OpenCV_LIBS})
+add_dependencies(ball_node2 pkg1_generate_messages_cpp)
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/pkg1.cpp
